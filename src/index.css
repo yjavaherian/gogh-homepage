@@ -19,14 +19,69 @@
     opacity: 1;
   }
 }
+.dark main {
+  background-color: #101012;
+  /* Secondary Colors */
+  --color-secondary-50: #f5f7fa;
+  --color-secondary-100: #f3f1ce;
+  --color-secondary-200: #1d2534;
+  --color-secondary-300: #2c3a4e;
+  --color-secondary-400: #ceb233;
+  --color-secondary-500: #5577a1;
+  --color-secondary-600: #425e87;
+  --color-secondary-700: #364c6e;
+  --color-secondary-800: #30425c;
+  --color-secondary-900: #2c3a4e;
+  --color-secondary-950: #f5f7fa;
+
+  /* Primary Colors */
+  --color-primary-50: #f5f7fa;
+  --color-primary-100: #eaeef4;
+  --color-primary-200: #d0d9e7;
+  --color-primary-300: #a6b9d3;
+  --color-primary-400: #7795b9;
+  --color-primary-500: #5577a1;
+  --color-primary-600: #425e87;
+  --color-primary-700: #364c6e;
+  --color-primary-800: #30425c;
+  --color-primary-900: #2c3a4e;
+  --color-primary-950: #1d2534;
+}
+
+main {
+  background-color: #efebe5;
+  /* Secondary Colors */
+  --color-secondary-50: #f8f6f4;
+  --color-secondary-100: #efebe5;
+  --color-secondary-200: #ddd3c9;
+  --color-secondary-300: #c8b8a9;
+  --color-secondary-400: #b29785;
+  --color-secondary-500: #a2816d;
+  --color-secondary-600: #957161;
+  --color-secondary-700: #7c5c52;
+  --color-secondary-800: #664d46;
+  --color-secondary-900: #53403b;
+  --color-secondary-950: #2c201e;
+
+  /* Primary Colors */
+  --color-primary-50: #f3f7f8;
+  --color-primary-100: #dfeaee;
+  --color-primary-200: #c3d8de;
+  --color-primary-300: #85afbb;
+  --color-primary-400: #6998a7;
+  --color-primary-500: #4d7c8d;
+  --color-primary-600: #436777;
+  --color-primary-700: #3b5663;
+  --color-primary-800: #364a54;
+  --color-primary-900: #314048;
+  --color-primary-950: #1d282f;
+}
 
 .vincent {
   position: relative;
-  height: 100vh;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.4);
-  background-blend-mode: lighten; */
+  z-index: 1;
 }
+
 .vincent::before {
   content: "";
   position: absolute;
@@ -34,20 +89,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/blossom.jpg");
   background-size: cover;
   opacity: 1;
   z-index: -1;
+}
+.vincent::before {
+  background-image: url("/blossom.jpg");
   mask-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.5) 20%,
-    rgba(0, 0, 0, 0.4) 40%,
-    rgba(0, 0, 0, 0.3) 60%,
-    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.3) 80%,
     rgba(0, 0, 0, 0) 100%
   );
-  -webkit-mask-image: linear-gradient(
+}
+
+.dark .vincent::before {
+  background-image: url("/starry_night.jpg");
+  mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.6) 0%,
     rgba(0, 0, 0, 0.5) 20%,

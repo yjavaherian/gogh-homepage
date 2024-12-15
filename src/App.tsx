@@ -26,13 +26,13 @@ const supportedTerminals = [
 ];
 function App() {
   return (
-    <main className="vincent font-inter text-neutral-700">
-      <Header />
-
-      <section className="px-40 mt-8 ">
-        <SupportedTerminals terminals={supportedTerminals} />
-      </section>
-
+    <main className="font-inter text-neutral-700  dark:text-neutral-200">
+      <div className="vincent">
+        <Header />
+        <section className="px-40 mt-8 ">
+          <SupportedTerminals terminals={supportedTerminals} />
+        </section>
+      </div>
       <section className=" mt-8">
         <TerminalsList />
       </section>
