@@ -1,2 +1,1 @@
-- add github stars
-- better homepage style
+- notify gogh maintainers of this homepage.
