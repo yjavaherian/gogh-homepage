@@ -1,4 +1,4 @@
-import vangophSignature from "./assets/goph.svg";
+import Header from "./components/Header.tsx";
 import SupportedTerminals from "./components/SupportedTerminals.tsx";
 import TerminalsList from "./components/TerminalsList.tsx";
 
@@ -26,51 +26,14 @@ const supportedTerminals = [
 ];
 function App() {
   return (
-    <main className="pt-20 flex flex-col place-items-center font-sans text-neutral-700">
-      <header className="flex flex-col place-items-center">
-        <img className="w-96" src={vangophSignature} alt="goph logo" />
-        <blockquote className="mt-6 italic text-2xl ">
-          There is no <span className="text-blue-400">blue</span> without{" "}
-          <span className="text-yellow-400">yellow</span> and without{" "}
-          <span className="text-orange-400">orange</span>.
-          {/* <Quote  className="ml-1 w-4 h-4 inline"/> */}
-          <br />
-          <a
-            href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"
-            className="text-amber-800 hover:text-amber-900 hover:underline"
-          >
-            - Vincent Van Gogh
-          </a>
-        </blockquote>
-      </header>
-      <section className="mt-20 w-2/3">
-        <h2 className="font-bold text-4xl">Color scheme for your terminal</h2>
-        <p className="mt-4 text-2xl ">
-          Gogh is a collection of color schemes for various terminal emulators.
-          These schemes are designed to make your terminal more visually
-          appealing and improve your productivity by providing a better contrast
-          and color differentiation.
-        </p>
-      </section>
+    <main className="vincent font-inter text-neutral-700">
+      <Header />
 
-      <section className="mt-8 w-2/3">
+      <section className="px-40 mt-8 ">
         <SupportedTerminals terminals={supportedTerminals} />
       </section>
-      <section className="mt-8 w-2/3">
-        <h2 className="mb-8 font-bold text-4xl">Instal (Linux & macOS)</h2>
 
-        <code className="block w-fit  bg-stone-300 text-stone-950 rounded-lg p-4">
-          <span className="text-stone-500">$</span> bash -c "$(wget -qO-
-          https://git.io/vQgMr)"
-        </code>
-        <span className="block text-xl my-2">or</span>
-
-        <code className="block w-fit bg-stone-300 text-stone-950 rounded-lg p-4">
-          <span className="text-stone-500">$</span> bash -c "$(curl -sLo-
-          https://git.io/vQgMr)"
-        </code>
-      </section>
-      <section className="w-11/12 mt-8">
+      <section className=" mt-8">
         <TerminalsList />
       </section>
     </main>
