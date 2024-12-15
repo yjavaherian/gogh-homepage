@@ -1,0 +1,2 @@
+- add github stars
+- better homepage style
