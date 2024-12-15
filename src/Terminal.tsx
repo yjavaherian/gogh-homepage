@@ -12,17 +12,17 @@ export interface Theme {
 
 export default function Terminal(theme: Theme) {
   return (
-    <div>
+    <div className="border rounded-lg">
       <header className="bg-neutral-800 text-neutral-100 text-center relative p-2 rounded-t-lg">
         {theme.name}
         <div className="absolute right-0 top-0 flex flex-row gap-2 pr-2 pt-2">
-          <button className="bg-neutral-700 rounded-full">
+          <button className="bg-neutral-600 hover:bg-neutral-700 rounded-full">
             <Minus className="w-5 h-5 p-1" />
           </button>
-          <button className="bg-neutral-700 rounded-full">
+          <button className="bg-neutral-600 hover:bg-neutral-700 rounded-full">
             <Square className="w-5 h-5 p-1" />
           </button>
-          <button className="bg-neutral-700 rounded-full">
+          <button className="bg-neutral-600 hover:bg-neutral-700 rounded-full">
             <X className="w-5 h-5 p-1" />
           </button>
         </div>
@@ -33,14 +33,13 @@ export default function Terminal(theme: Theme) {
           color: theme.foreground,
           fontFamily: "Cascadia Code",
         }}
-        className="p-4 rounded-b-lg "
+        className="p-4 rounded-b-lg  aspect-video"
       >
-        <div className="grid grid-cols-8 w-fit mb-8">
-          {theme.colors.map((color) => (
-            <span
-              style={{ backgroundColor: color }}
-              className="w-16 h-8"
-            ></span>
+        <div className="grid grid-cols-8 mb-8">
+          {theme.colors.map((color, i) => (
+            <span key={i} style={{ backgroundColor: color }}>
+              &nbsp;
+            </span>
           ))}
         </div>
 
