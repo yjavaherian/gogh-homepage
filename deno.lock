@@ -7,6 +7,7 @@
     "npm:@types/react@^18.3.12": "18.3.12",
     "npm:@vitejs/plugin-react@^4.3.4": "4.3.4_vite@6.0.3_@babel+core@7.26.0",
     "npm:autoprefixer@^10.4.20": "10.4.20_postcss@8.4.49",
+    "npm:lucide-react@0.468": "0.468.0_react@18.3.1",
     "npm:postcss@^8.4.49": "8.4.49",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
@@ -727,6 +728,12 @@
         "yallist"
       ]
     },
+    "lucide-react@0.468.0_react@18.3.1": {
+      "integrity": "sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA==",
+      "dependencies": [
+        "react"
+      ]
+    },
     "merge2@1.4.1": {
       "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="
     },
@@ -1101,6 +1108,7 @@
       "npm:@types/react@^18.3.12",
       "npm:@vitejs/plugin-react@^4.3.4",
       "npm:autoprefixer@^10.4.20",
+      "npm:lucide-react@0.468",
       "npm:postcss@^8.4.49",
       "npm:react-dom@^18.3.1",
       "npm:react@^18.3.1",

@@ -17,6 +17,7 @@
     "@types/react-dom": "npm:@types/react-dom@^18.3.1",
     "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.4",
     "autoprefixer": "npm:autoprefixer@^10.4.20",
+    "lucide-react": "npm:lucide-react@^0.468.0",
     "postcss": "npm:postcss@^8.4.49",
     "react": "npm:react@^18.3.1",
     "react-dom": "npm:react-dom@^18.3.1",
