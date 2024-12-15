@@ -17,27 +17,27 @@ export default function TerminalsList() {
 
     return (
     <>
-      <div className="flex flex-row gap-2 justify-center place-items-center">
+      <div className=" flex flex-row gap-2 justify-center place-items-center">
         <button
-          className="py-3  w-56 text-2xl font-bold rounded-xl bg-amber-700 hover:bg-amber-900 active:bg-amber-950 text-amber-50 "
+          className="py-3  w-56 text-2xl font-bold rounded-xl bg-secondary-700 hover:bg-secondary-900 active:bg-secondary-950 text-secondary-50 "
           onClick={() => setFilteredBackgrounds(["light", "dark"])}
         >
           All
         </button>
         <button
-          className="py-3  w-56 text-2xl font-bold rounded-xl bg-amber-700 hover:bg-amber-900 active:bg-amber-950 text-amber-50 "
+          className="py-3  w-56 text-2xl font-bold rounded-xl bg-secondary-700 hover:bg-secondary-900 active:bg-secondary-950 text-secondary-50 "
           onClick={() => setFilteredBackgrounds(["light"])}
         >
           Light Themes
         </button>
         <button
-          className="py-3  w-56 text-2xl font-bold rounded-xl bg-amber-700 hover:bg-amber-900 active:bg-amber-950 text-amber-50 "
+          className="py-3  w-56 text-2xl font-bold rounded-xl bg-secondary-700 hover:bg-secondary-900 active:bg-secondary-950 text-secondary-50 "
           onClick={() => setFilteredBackgrounds(["dark"])}
         >
           Dark Themes
         </button>
       </div>
-      <ul className="mt-8 grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 ">
+      <ul className="px-20 mt-8 grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 ">
         {themes.map((theme) => (
           <li key={theme.name}>
             <Terminal {...theme} />

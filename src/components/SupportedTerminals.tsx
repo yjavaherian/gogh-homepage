@@ -10,7 +10,7 @@ export default function SupportedTerminals({
         {terminals.map((terminal) => (
           <button
             key={terminal.name}
-            className="rounded-xl bg-neutral-700 text-neutral-100 hover:text-neutral-200 hover:border-e-neutral-800  py-1 px-2 text-lg "
+            className="rounded-xl bg-primary-700 text-primary-50  hover:bg-primary-800  py-1 px-2 text-lg "
           >
             <a target="_blank" href={terminal.link}>
               {terminal.name}

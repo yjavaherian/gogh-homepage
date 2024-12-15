@@ -33,7 +33,7 @@ const GitHubStars = () => {
   return (
     <a
       href="https://github.com/Gogh-Co/Gogh"
-      className="bg-amber-400 hover:bg-amber-300 p-3 rounded-xl "
+      className="bg-secondary-200 hover:bg-secondary-300 p-4 rounded-xl "
     >
       <svg
         role="img"
