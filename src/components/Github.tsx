@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 const GitHubStars = () => {
   const [stars, setStars] = useState<number | null>(null);

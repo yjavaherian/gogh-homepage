@@ -8,6 +8,7 @@ this is my attempt to rewrite [goph](https://gogh-co.github.io/Gogh/) showcase w
 - Vite
 - React
 - Tailwind
+- Lucide Icons
 
 ## Development
 
