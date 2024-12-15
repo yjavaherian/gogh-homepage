@@ -1,19 +1,22 @@
-# Vite + Deno + React + TypeScript
+# Goph rewrite
 
-## Running
+this is my attempt to rewrite [goph](https://gogh-co.github.io/Gogh/) showcase website using a more modern stack.
 
-You need to have Deno v2.0.0 or later installed to run this repo.
+## Stack
 
-Start a dev server:
+- Deno
+- Vite
+- React
+- Tailwind
 
-```
-$ deno task dev
-```
+## Development
 
-## Deploy
+- clone the repo.
+- install deno.
+- run `deno task dev`
 
-Build production assets:
+## Build for production
 
-```
+```bash
 $ deno task build
 ```
